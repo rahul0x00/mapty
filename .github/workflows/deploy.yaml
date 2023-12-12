@@ -17,4 +17,4 @@ jobs:
       uses: azure/CLI@v1
       with:
         azcliversion: 2.27.0
-        inlineScript: az storage blob upload-batch --account-name baadal --account-key ${{ secrets.AZURE_STORAGE_KEY }} --destination $web --source $log
+        inlineScript: az storage blob upload-batch --account-name baadal --account-key ${{ secrets.AZURE_STORAGE_KEY }} --destination '$web' --source '.'
